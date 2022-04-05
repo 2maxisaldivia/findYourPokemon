@@ -1,0 +1,132 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
+@media only screen and (max-width: 600px) and (min-width: 375px) {
+
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+  }
+
+  body{
+
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(360deg, rgba(196, 196, 196, 0) 84%, #FFCB05 93.23%);
+  }
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 204px;
+      
+  }
+
+  .Logo{
+
+    width: 273px;
+    height: 100px;
+    position: relative;
+  }
+
+  .look-for-your-pokemon{
+    display: flex;
+    align-items: center;
+    font-family: acumin-pro-extra-condensed,sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px ;
+    line-height: 34px;
+    color: #3663AD;
+  }
+
+
+  .field {
+    display:flex;
+    position: relative;
+    margin-left: 4%;
+    width:50%;
+    flex-direction:row;
+    box-shadow:
+    1px 1px 0 #3663AD,
+    2px 2px 0 #3663AD,
+    3px 3px 0 #3663AD,
+    4px 4px 0 #3663AD,
+    5px 5px 0 #3663AD,
+    6px 6px 0 #3663AD,
+    7px 7px 0 #3663AD;
+  }
+
+  .field>input[type=text],
+  .field>button {
+    display:block;
+    font:1.2em 'Montserrat Alternates';
+  }
+
+  .field>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em solid #3663AD;
+  }
+
+  .field>button {
+    color: white;
+    padding:0.6em 0.8em;
+    background-color: #3663AD;
+    flex-direction: column;
+    
+  }
+
+  .searcher-container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .searcher{
+    margin-top: 40px;
+  }
+
+  .background-img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .image{
+    margin-top: 150px;
+    margin-left: 30%;
+    height: 32%;
+    position: fixed;
+  }
+
+  .lista{
+    display: flex;
+  }
+
+  li{
+    display: flex
+  }
+
+  .data-poke-card{
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    margin-top: 2rem;
+  }
+
+  .poke-img, .poke-type, .description{
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .blastoise{
+    width: 280px;
+    height: 310px;
+    margin-top: 12.4rem;
+    margin-left: 5rem;
+  }
+
+}

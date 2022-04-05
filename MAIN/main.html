@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/gaq0jmo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/MAIN/main.css">
+    <title>Poke-App</title>
+</head>
+<body>
+
+<!--Este div se mostrará en caso de que los datos ingresados por el usuario, sean incorrectos-->
+    <div class ="hidden">
+        <img class= 'hidden-logo' src='/Logo/Logo Pokemon.png'>
+        <div class="hidden-text">The data entered is not valid. Please check the name or ID number.</div>
+        <img class="hidden-pikachu" src="/MAIN/pikachu-llorando6.png">
+        <button class="hidden-button" onclick="backTosearcher();"> SEARCH AGAIN</button>
+    </div>
+
+<!--A partir de aca empieza la informacion que solicitara el usuario, en caso de que efectivamente exista.-->
+    <div  class="poke-card-container show">
+
+<!-- Esta es la parte de arriba que contiene los nombres en los diferentes idiomas y el numero de pokemon --> 
+        <div class="poke-card-container-top">
+            <div class="name-and-id">
+                <div class="id-container">
+                     
+                    <div>POKEMON #</div> 
+                    <div class="pokemon-id"></div> 
+                            
+                </div>
+
+                <div class="pokemon-name-en"> </div>
+            </div>
+            
+        
+            <div class="flags-container">
+
+                <div class="japanese-flag"> 
+                    <img class="flag" src="/FLAGS/image 11.png" width="24.04" height="16px" >
+                    <div class="pokemon-name-jpn"></div> 
+                </div>
+                    
+                <div class="chinese-flag">
+                    <img  class="flag" src="/FLAGS/image 10.png" width="24.04" height="16px">  
+                    <div class="pokemon-name-chn"></div>
+                </div>
+
+                <div class= "french-flag">
+                    <img class="flag" src="/FLAGS/image 8.png" width="24.04" height="16px"> 
+                    <span class="pokemon-name-fr"></span> 
+                </div>
+        
+            </div>
+        </div>    
+        
+    
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------- --> 
+
+<!-- En este apartado se colocara la imagen del pokemon correspondiente -->
+        <div class='pokemon-image-container'>
+            <img class="pokemon-img" width= "375px" height = "375px" src="" >
+        </div>
+
+<!-- Aqui comienza la seccion donde se va a almacenar toda la informacion correspondiente a los diferentes pokemones -->
+        <div class="pokemon-information">
+
+            <div class= "species-and-description">
+                <div class="species-container">
+                    <span class="features">SPECIES</span>
+                    <div class="pokemon-species"></div>
+                </div>
+                <div class="container-description">
+                    <div class="pokemon-description"></div>
+                </div>
+                
+            </div>
+            
+            <div class="borde"></div>
+
+            <div class="types-and-stats">
+
+                <div class="type-weigth-heigth">
+                    
+                    <div class="types-container">
+                        <span class="features">TYPES</span>
+                        <div class="pokemon-type"></div>
+                    </div>
+
+                    <div class="weight-container">
+                        <span class="features stats-features">WEIGHT</span>
+                        <div class="pokemon-weight"></div>
+                    </div>
+
+                    <div class="height-container">
+                        <span class="features stats-features">HEIGHT</span>
+                        <div class="pokemon-height"></div>
+                    </div>
+            
+                </div>
+
+                <div class="stats-container">
+                    <span class="features">POKEMON STATS</span>
+                    
+                    <div class="hp-container">
+                        <span class="stats-name">HP</span>
+                        <div class="pokemon-hp numbers"></div>
+                    </div>
+
+                    <div class="attack-container">
+                        <span class="stats-name">Attack</span>
+                        <div class="pokemon-attack numbers"></div>
+                    </div>
+
+                    <div class="defense-container">
+                        <span class="stats-name">Defense</span>
+                        <div class="pokemon-defense numbers"></div>
+                    </div>
+
+                    <div class="sp-attack-container">
+                        <span class="stats-name">Sp. Attack</span>
+                        <div class="pokemon-sp-attack numbers">30</div>
+                    </div>
+
+                    <div class="sp-defense-container">
+                        <span class="stats-name">Sp. Defense</span>
+                        <div class="pokemon-sp-defense numbers">40</div>
+                    </div>
+
+                    <div class="speed-container">
+                        <span class="stats-name">Speed</span>
+                        <div class="pokemon-speed numbers"></div>
+                    </div>
+
+                </div>
+    
+            </div>
+           
+            <div class="borde" style="margin-top: 2rem;"></div>
+
+        </div> 
+            <div class="search-again-container">
+                <button type="button" class="search-again" class="hidden-button" onclick="backTosearcher();">SEARCH AGAIN</button>
+            </div>
+            
+    </div>           
+    
+    
+    <script src="/ROUTER Y API (JS)/api.js"></script>
+    <script src="/MAIN/main.js"></script>
+    <script src="/SEARCH/look-for.js"></script>
+    
+    
+    
+</body>
+</html>
